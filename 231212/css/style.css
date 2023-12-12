@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  list-style: none;
+  padding: 0;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+ul li {
+  padding: 0 20px;
+}
