@@ -47,12 +47,9 @@ body {
 }
 
 h1 {
-    display: flex;
-    max-width: 960px;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     color: darkolivegreen;
-    margin: 30px auto;
+    margin: 30px 0;
 
 }
 
@@ -64,16 +61,16 @@ h1 {
 
 }
 
-
-.sarvise1,
-.sarvise2,
-.sarvise3 {
+.service {
     background-color: white;
-    width: 34.37%;
-    height: 280px;
-    margin: 30px 20px;
+    width: 31%;
+    margin: 30px 0;
 }
 
+.service p {
+    padding: 0 10px 10px;
+
+}
 
 h2 {
     border-left: 10px solid darkolivegreen;
@@ -81,21 +78,18 @@ h2 {
     margin: 10px;
 }
 
-
 @media screen and (max-width: 400px) {
-    h1 {
-        display: block;
-        text-align: center;
-        padding: 10px;
-    }
-
-
     .flexbox {
         display: block;
+        padding: 20px;
+    }
+
+    .service {
+        width: 100%;
 
     }
 
-    .sarvise1 img {
+    .service img {
         width: 100%;
 
     }
