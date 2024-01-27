@@ -27,6 +27,10 @@ li {
     font-feature-settings: "palt";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     /*下線を消す*/
     text-decoration: none;
@@ -97,93 +101,94 @@ a:hover {
     .pc_nav {
         display: none;
     }
-}
 
-/* ハンバーガー */
-.sp_btn {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    display: block;
-    height: 23px;
-    cursor: pointer;
-    z-index: 2;
-}
+    /* ハンバーガー */
+    .sp_btn {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        z-index: 2;
+    }
 
-.sp_btn span {
-    position: relative;
-    top: 10px;
-    display: block;
-    width: 33px;
-    height: 3px;
-    border-radius: 2px;
-    background: #fff;
-    transition: 0.3s;
-}
+    .sp_btn span {
+        position: relative;
+        top: 10px;
+        display: block;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        transition: 0.3s;
+    }
 
-.sp_btn span::before,
-.sp_btn span::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 33px;
-    height: 3px;
-    border-radius: 2px;
-    background: #fff;
-}
+    .sp_btn span::before,
+    .sp_btn span::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        transition: 0.3s;
+    }
 
-.sp_btn span::before {
-    bottom: 10px;
-}
+    .sp_btn span::before {
+        bottom: 10px;
+    }
 
-.sp_btn span::after {
-    top: 10px;
-}
+    .sp_btn span::after {
+        top: 10px;
+    }
 
-/* ハンバーガー閉じる */
-.sp_btn.open span {
-    background: transparent;
-}
+    /* ハンバーガー閉じる */
+    .sp_btn.open span {
+        background: transparent;
+    }
 
-.sp_btn.open span::before {
-    bottom: 0;
-    transform: rotate(45deg);
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
 
-}
+    }
 
-.sp_btn.open span::after {
-    top: 0;
-    transform: rotate(135deg);
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(135deg);
 
-}
+    }
 
-/* ハンバーガーメニュー */
-.sp_nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    /* デバイスの高さ */
-    background: rgba(0, 0, 0, 0.8);
-    /* カンマとピリオドに注意 */
-    z-index: 1;
-}
+    /* ハンバーガーメニュー */
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* デバイスの高さ */
+        background: rgba(0, 0, 0, 0.8);
+        /* カンマとピリオドに注意 */
+        z-index: 1;
+    }
 
-.sp_nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 
-.sp_nav ul li {
-    padding: 20px;
-    color: #fff;
-    font-size: 18px;
-    font-family: "游ゴシック体", YuGothic, " 游ゴシック", " Yu Gothic", " メイリオ",
-        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    .sp_nav ul li {
+        padding: 20px;
+        color: #fff;
+        font-size: 18px;
+        font-family: "游ゴシック体", YuGothic, " 游ゴシック", " Yu Gothic", " メイリオ",
+            "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    }
 }
 
 main {
@@ -197,37 +202,31 @@ main {
 }
 
 .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-top: 40px;
     margin-bottom: 35px;
 }
 
 .lead {
-    display: flex;
-    justify-content: center;
+    padding-top: 100px;
     text-align: center;
-    width: 100%;
-    flex-wrap: wrap;
 }
 
 .lead_text {
     font-size: 30px;
-    margin-top: 100px;
 }
 
 .lead_heading {
     font-size: 82px;
     margin-top: 47px;
-    line-height: 96px;
+    line-height: 1.17;
     letter-spacing: 0.1em;
 }
 
 .lead_text2 {
     font-size: 23px;
     margin-top: 30px;
-    line-height: 38px;
+    line-height: 1.65;
     letter-spacing: 0.1em;
 }
 
@@ -236,8 +235,7 @@ main {
     justify-content: space-between;
     align-items: center;
     max-width: 1000px;
-    margin-top: 100px;
-    padding: 10px;
+    margin-top: 40px;
 }
 
 .about_us {
@@ -253,37 +251,34 @@ main {
 }
 
 .about_wrap {
+    box-sizing: border-box;
     width: 50%;
-    flex-direction: column;
-    margin-left: 80px;
+    padding-left: 8%;
 }
 
-h2 {
+.about_wrap h3 {
     font-weight: normal;
     font-size: 44px;
-    line-height: 61px;
-    margin-top: 45px;
+    line-height: 1.38;
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
 .about_text {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
 }
 
 .menu h2 img {
     width: 151px;
+    margin-top: 60px;
 }
 
-.menu_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 45px;
-    margin-bottom: 100px;
-    max-width: 1000px;
+.menu_img {
+    width: 30%;
 }
 
-h3 {
+.menu_img h3 {
     font-size: 38px;
     font-weight: normal;
     margin: 12px;
@@ -291,20 +286,18 @@ h3 {
     color: #d30202;
 }
 
-ul {
+.menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .menu_img img {
     border-top-right-radius: 20%;
 }
 
-li p {
-    width: 300px;
+.menu_img p {
     margin: 0 auto;
     line-height: 25px;
     font-size: 17px;
@@ -314,30 +307,34 @@ li p {
 
 .gallery h2 img {
     width: 245px;
+    margin-top: 45px;
 }
 
 .gallery_item {
-    max-width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 384%;
 }
 
 .event h2 img {
-    width: 175px;
+    width: 173px;
+    margin-top: 55px;
+    margin-bottom: 10px;
 }
 
 .event_time {
-    max-width: 100%;
     display: flex;
     justify-content: center;
     border: solid 3px #4f260b;
     background-color: #fff;
     padding: 35px;
-    margin: 25px;
 }
 
+.event_time li+li {
+    margin-top: 25px;
+}
+
+.event_time li time {
+    margin-right: 50px;
+}
 
 .event_time li time,
 .event_time li a {
@@ -346,21 +343,47 @@ li p {
 
 .event_time li a {
     text-decoration: underline;
-    margin-left: 20px;
 }
 
 .access h2 img {
     width: 214px;
+    margin-top: 60px;
 }
 
 .map iframe {
     display: block;
     width: 100%;
     height: 470px;
-    margin: 0;
-    padding: 0;
+}
+
+.footer_inner {
+    padding: 75px 10px;
+}
+
+.footer_flex {
+    display: flex;
+}
+
+.footer_img {
+    width: 226px;
+    margin-right: 60px;
 }
 
 .footer_text {
-    display: block;
+    color: #000;
+    font-size: 20px;
+    line-height: 1.95;
+}
+
+.footer_credit {
+    margin-top: 70px;
+    text-align: center;
+    color: #000;
+}
+
+.pagetop {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    width: 125px;
 }
