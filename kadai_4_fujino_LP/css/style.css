@@ -191,6 +191,17 @@ a:hover {
     }
 }
 
+@media screen and (max-width:1100px) {
+    .lead_heading {
+        display: block;
+        font-size: 38px;
+    }
+
+    .about source {
+        display: none;
+    }
+}
+
 main {
     max-width: 1000%;
     background-color: #e8d9bf;
@@ -312,6 +323,10 @@ main {
 
 .gallery_item {
     display: flex;
+}
+
+.event {
+    padding: 0 10px;
 }
 
 .event h2 img {

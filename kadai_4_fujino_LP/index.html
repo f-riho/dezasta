@@ -13,8 +13,14 @@
 <body>
 
     <header id="header">
-        <div class="header_slider"></div>
-        <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
+        <div class="header_slider">
+            <div>
+                <picture>
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:1100px)">
+                    <img src="images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
+            </div>
+        </div>
         <div class="header_wrap">
             <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
             <nav class="pc_nav">
@@ -50,7 +56,10 @@
         </div>
 
         <section id="about" class="about section">
-            <div class="about_us"><img src="images/pc_about-100.jpg" alt="coffee"></div>
+            <picture>
+                <source srcset="images/about_us@2x-100.jpg" media="(max-width:1100px)">
+                <div class="about_us"><img src="images/pc_about-100.jpg" alt="coffee"></div>
+            </picture>
             <div class="about_wrap">
                 <h2><img src="images/about_us@2x.png" alt="about"></h2>
                 <h3>私たちが提供する<br>
@@ -88,11 +97,7 @@
             </ul>
         </section>
         <section id="gallery" class="gallery">
-            <div class="heading">
-                <div>
-                    <h2><img src="images/gallery@2x.png" alt="gallery"></h2>
-                </div>
-            </div>
+            <h2 class="heading"><img src="images/gallery@2x.png" alt="gallery"></h2>
             <div class="gallery_item">
                 <div><img src="images/pc_gallary_05-100.jpg" alt="写真5"></div>
                 <div><img src="images/pc_gallary_04-100.jpg" alt="写真4"></div>
@@ -103,35 +108,27 @@
         </section>
 
         <div id="event" class="event section">
-            <div class="heading">
-                <div>
-                    <h2><img src="images/event@2x.png" alt="event"></h2>
-                </div>
-            </div>
-            <div class="event_time">
-                <ul>
-                    <li>
-                        <time datetime="2020-06-23">2020.06.23</time>
-                        <a href="">7月はイベント出店のため0/0お休みします</a>
-                    </li>
-                    <li>
-                        <time datetime="2020-03-15">2020.03.15</time>
-                        <a href="">春の新商品新発売。話題のあのブランドとコラボ</a>
-                    </li>
-                    <li>
-                        <time datetime="2020-02-06">2020.02.06</time>
-                        <a href="">コーヒーの日で30%OFFイベントを開催[3日間限定]</a>
-                    </li>
-                </ul>
-            </div>
+            <h2 class="heading"><img src="images/event@2x.png" alt="event"></h2>
+        </div>
+        <div class="event_time">
+            <ul>
+                <li>
+                    <time datetime="2020-06-23">2020.06.23</time>
+                    <a href="">7月はイベント出店のため0/0お休みします</a>
+                </li>
+                <li>
+                    <time datetime="2020-03-15">2020.03.15</time>
+                    <a href="">春の新商品新発売。話題のあのブランドとコラボ</a>
+                </li>
+                <li>
+                    <time datetime="2020-02-06">2020.02.06</time>
+                    <a href="">コーヒーの日で30%OFFイベントを開催[3日間限定]</a>
+                </li>
+            </ul>
         </div>
 
         <section id="access" class="access">
-            <div class="heading">
-                <div>
-                    <h2><img src="images/access@2x.png" alt="access"></h2>
-                </div>
-            </div>
+            <h2 class="heading"><img src="images/access@2x.png" alt="access"></h2>
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6560.375415279467!2d135.48990728762024!3d34.70044521231585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68d184cbfed%3A0xcddcd36b1d3ff7b9!2z44CSNTMwLTAwMDEg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65qKF55Sw!5e0!3m2!1sja!2sjp!4v1704886799965!5m2!1sja!2sjp"
