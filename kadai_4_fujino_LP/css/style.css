@@ -59,6 +59,9 @@ a:hover {
 
 /*　ここから課題　*/
 
+.header_slider img {
+    width: 100%;
+}
 
 .header_wrap {
     position: absolute;
@@ -74,6 +77,12 @@ a:hover {
 
 .header_logo {
     width: 226px;
+}
+
+@media screen and(max-width:767px) {
+    .header_logo {
+        width: 187px;
+    }
 }
 
 .pc_nav ul {
@@ -191,16 +200,22 @@ a:hover {
     }
 }
 
-@media screen and (max-width:1100px) {
-    .lead_heading {
-        display: block;
-        font-size: 38px;
-    }
-
-    .about source {
-        display: none;
-    }
+/* スライダー調整 */
+.slick-dots {
+    bottom: 20px;
 }
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+    font-size: 14px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+/* 汎用 */
 
 main {
     max-width: 1000%;
@@ -218,6 +233,17 @@ main {
     margin-bottom: 35px;
 }
 
+.sp_only {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    .sp_only {
+        display: block;
+    }
+}
+
+/* lead */
 .lead {
     padding-top: 100px;
     text-align: center;
@@ -241,6 +267,34 @@ main {
     letter-spacing: 0.1em;
 }
 
+@media screen and (max-width:1100px) {
+    .lead_heading {
+        font-size: 78px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .lead_text {
+        font-size: 17px;
+        margin-top: -50px;
+        margin-bottom: -20px;
+    }
+
+    .lead_heading {
+        font-size: 38px;
+        margin-bottom: -10px;
+        letter-spacing: 0.02em;
+        line-height: 1.15;
+    }
+
+    .lead_text2 {
+        font-size: 16px;
+        line-height: 1.87;
+        margin-bottom: 40px;
+    }
+}
+
+/* about */
 .about {
     display: flex;
     justify-content: space-between;
@@ -257,8 +311,8 @@ main {
     border-bottom-right-radius: 20%;
 }
 
-.about_wrap img {
-    width: 272px;
+.about_wrap h2 img {
+    width: 272%;
 }
 
 .about_wrap {
@@ -280,6 +334,46 @@ main {
     line-height: 1.62;
 }
 
+.about_sp {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .about {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about_wrap {
+        display: block;
+        width: 100%;
+        margin-right: auto 30px;
+    }
+
+    .about_wrap h2 {
+        width: 160px;
+        margin: auto;
+    }
+
+    .about_wrap h3 {
+        font-size: 38px;
+        line-height: 1.25;
+        margin-top: 10px;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .about_us {
+        display: none;
+    }
+
+    .about_sp {
+        display: block;
+    }
+}
+
+/* menu */
 .menu h2 img {
     width: 151px;
     margin-top: 60px;
@@ -316,6 +410,33 @@ main {
     font-feature-settings: "palt";
 }
 
+@media screen and (max-width:767px) {
+    .menu h2 img {
+        width: 87px;
+        margin: 0 auto;
+    }
+
+    .menu p {
+        font-size: 17px;
+        line-height: 1.58;
+        margin-bottom: 57px;
+    }
+
+    .menu {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu_img {
+        width: 100%;
+    }
+}
+
+/* .gallery */
 .gallery h2 img {
     width: 245px;
     margin-top: 45px;
@@ -323,6 +444,21 @@ main {
 
 .gallery_item {
     display: flex;
+}
+
+@media screen and (max-width:767px) {
+    .gallery h2 {
+        width: 142px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* event */
+.event h2 {
+    display: block;
+    width: 142px;
+    margin: auto;
 }
 
 .event {
@@ -360,17 +496,57 @@ main {
     text-decoration: underline;
 }
 
+@media screen and (max-width:767px) {
+    .event h2 {
+        width: 100px;
+        margin: auto;
+    }
+
+    .event_time {
+        flex-direction: column;
+    }
+
+    .event_time li time,
+    .event_time li a {
+        display: block;
+        font-size: 16px;
+        line-height: 1.5;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+/* access */
 .access h2 img {
     width: 214px;
     margin-top: 60px;
 }
 
+@media screen and (max-width:767px) {
+    .access h2 {
+        width: 124px;
+        margin: auto;
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+}
+
+/* map */
 .map iframe {
     display: block;
     width: 100%;
     height: 470px;
 }
 
+@media screen and (max-width:767px) {
+    .map iframe {
+        width: 100%;
+        height: 191px;
+    }
+}
+
+/* footer */
 .footer_inner {
     padding: 75px 10px;
 }
@@ -394,6 +570,22 @@ main {
     margin-top: 70px;
     text-align: center;
     color: #000;
+}
+
+@media screen and (max-width:767px) {
+    .footer_flex {
+        display: block;
+    }
+
+    .footer_text {
+        font-size: 18px;
+        line-height: 1.72;
+    }
+
+    .footer_img img {
+        width: 100%;
+        margin-top: -20px;
+    }
 }
 
 .pagetop {
