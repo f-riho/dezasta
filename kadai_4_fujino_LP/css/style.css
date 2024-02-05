@@ -301,6 +301,10 @@ a:hover {
     }
 }
 
+.lb-data .lb-number {
+    display: none !important;
+}
+
 /* 汎用 */
 
 main {

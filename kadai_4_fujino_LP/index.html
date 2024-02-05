@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/lightbox.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script src="js/lightbox.min.js"></script>
 </head>
 
 <body>
@@ -110,17 +110,17 @@
         <section id="gallery" class="gallery">
             <h2 class="heading"><img src="images/gallery@2x.png" alt="gallery"></h2>
             <div class="gallery_item">
-                <div><a href="images/pc_gallary_05-100.jpg" data-lightbox="image1" date-title="gallery1"><img
+                <div><a href="images/pc_gallary_05-100.jpg" data-lightbox="image" data-title="gallery1"><img
                             src="images/pc_gallary_05-100.jpg" alt="写真1"></a></div>
-                <div><a href="images/pc_gallary_04-100.jpg" data-lightbox="image2" date-title="gallery2"><img
+                <div><a href="images/pc_gallary_04-100.jpg" data-lightbox="image" data-title="gallery2"><img
                             src="images/pc_gallary_04-100.jpg" alt="写真2"></a></div>
-                <div><a href="images/pc_gallary_03-100.jpg" data-lightbox="image3" date-title="gallery3"><img
+                <div><a href="images/pc_gallary_03-100.jpg" data-lightbox="image" data-title="gallery3"><img
                             src="images/pc_gallary_03-100.jpg" alt="写真3"></a></div>
-                <div><a href="images/pc_gallary_02-100.jpg" data-lightbox="image4" date-title="gallery4"><img
+                <div><a href="images/pc_gallary_02-100.jpg" data-lightbox="image" data-title="gallery4"><img
                             src="images/pc_gallary_02-100.jpg" alt="写真4"></a></div>
-                <div><a href="images/pc_gallary_01-100.jpg" data-lightbox="image5" date-title="gallery5"><img
+                <div><a href="images/pc_gallary_01-100.jpg" data-lightbox="image" data-title="gallery5"><img
                             src="images/pc_gallary_01-100.jpg" alt="写真5"></a></div>
-                <div><a href="images/pc_gallary_01-100.jpg" data-lightbox="image6" date-title="gallery6"><img
+                <div><a href="images/pc_gallary_01-100.jpg" data-lightbox="image" data-title="gallery6"><img
                             src="images/pc_gallary_01-100.jpg" alt="写真6"></a></div>
             </div>
         </section>
@@ -191,9 +191,6 @@
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 1,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            dots: true
                         },
                     }
                 ]
@@ -201,7 +198,6 @@
         });
 
     </script>
-    <script src="./script/lightbox/js/lightbox.min.js"></script>
 </body>
 
 </html>
