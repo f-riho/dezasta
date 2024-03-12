@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ポートフォリオ">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'nuy0gdd',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>FUJINO RIHO portfolio</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_top">
+            <div class="header_logo"><img src="images/logo_f.svg" alt="girl_logo"></div>
+            <div class="header_menu">
+                <nav class="section">
+                    <div><a href="#about">about</a></div>
+                    <div><a href="#works">works</a></div>
+                    <div><a href="#contact">contact</a></div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="box">
+            <picture>
+                <source srcset="images/topmain@2x-80.jpg" media="(max-width:1100px)">
+                <img src="images/topmain_23-80.jpg" alt="main">
+            </picture>
+            <div class="section">
+                <section class="name">
+                    <h1>RIHO<br>
+                        FUJINO</h1>
+                    <p>web design<br>
+                        coding</p>
+                </section>
+            </div>
+        </div>
+
+        <div id="concept" class="concept">
+            <div class="concept_logo"><img src="images/logo.svg" alt="logo"></div>
+            <p class="lead">お客様に伝わりやすく誰が見てもわかりやすい<br>
+                こだわりとテーマが<br>
+                しっかり感じられるデザインをつくりたい<br>
+                と思ってます。</p>
+            <div class="lead_logo"><img src="images/flower_04.svg" alt="flower_04"></div>
+            <div class="lead_logo2"><img src="images/flower_05.svg" alt="flower_05"></div>
+        </div>
+
+        <section id="works" class="works">
+            <h2 class="works_logo">works</h2>
+            <ul class="works">
+                <li class="works_all"><a href="#"><img src="images/topPC_01-80.jpg" alt="works01"></a></li>
+                <li class="works_all"><a href="#"><img src="images/topPC_02-80.jpg" alt="works02"></a></li>
+                <li class="works_all"><a href="#"><img src="images/topPC_03-80.jpg" alt="works03"></a></li>
+                <li class="works_all"><a href="#"><img src="images/topPC_04-80.jpg" alt="works04"></a></li>
+                <li class="works_all"><a href="#"><img src="images/topPC_05-80.jpg" alt="works05"></a></li>
+                <li class="works_all"><a href="#"><img src="images/topPC_06-80.jpg" alt="works06"></a></li>
+            </ul>
+        </section>
+        <div class="more">
+            <a href="#works">more</a>
+        </div>
+        <section id="about" class="about">
+            <div class="about_wrap">
+                <div class="about_flower01"><img src="images/flower_01.svg" alt="flower_01"></div>
+                <div class="about_flower02"><img src="images/flower_02.svg" alt="flower_02"></div>
+                <div class="about_flower03"><img src="images/flower_03.svg" alt="flower_03"></div>
+                <div class="about_bird"><img src="images/bird.svg" alt="bird"></div>
+            </div>
+            <div class="about"><img src="images/main_about15-80.jpg" alt=""></div>
+            <h2 class="about">about</h2>
+            <div class="about_text">
+                <p class="about_name">ふじの りほ<br>
+                    大阪府出身</p>
+                <p>webデザイン<br>
+                    バナー<br>
+                    ランディングページ<br>
+                    html / css / JavaScript / jQuery</p>
+            </div>
+        </section>
+
+        <div class="more">
+            <a href="#about">more</a>
+        </div>
+    </main>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap')
+    </style>
+</body>
+
+</html>

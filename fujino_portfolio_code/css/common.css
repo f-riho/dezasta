@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #000;
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 400;
+    /* メトリクス */
+    font-feature-settings: "palt";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+    /* 文字ふわっと */
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+a:hover {
+    opacity: 0.5;
+    /* 透過させる */
+}
+
+/* 共通 */
+
+h2 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #068B72;
+    margin: 0 auto;
+
+}
+
+/* botton */
+
+.more a {
+    background: #EEE36E;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 287px;
+    height: 61px;
+    color: #068B72;
+    transition: 0.3s ease-in-out;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.more a::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    border: 2px solid #068B72;
+    transition: 0.2s;
+}
+
+.more a::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #068B72;
+    border-right: 2px solid #068B72;
+    transform: rotate(45deg);
+    margin-left: 30px;
+}
+
+.more a:hover::before {
+    top: 0;
+    left: 0;
+}
+
+.more a:hover {
+    text-decoration: none;
+    background-color: #EEE36E;
+}
