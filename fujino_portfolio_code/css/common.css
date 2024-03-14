@@ -57,16 +57,29 @@ a:hover {
 
 /* 共通 */
 
+.header_top {
+    max-width: 1536px;
+    position: relative;
+    background-color: #EEE36E;
+    height: 24%;
+}
+
+.header_menu {
+    position: absolute;
+    right: 217px;
+    top: 48px;
+    bottom: 48px;
+}
+
 h2 {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 28px;
     color: #068B72;
     margin: 0 auto;
-
 }
 
-/* botton */
+/* button */
 
 .more a {
     background: #EEE36E;
@@ -105,6 +118,7 @@ h2 {
     margin-left: 30px;
 }
 
+
 .more a:hover::before {
     top: 0;
     left: 0;
@@ -113,4 +127,36 @@ h2 {
 .more a:hover {
     text-decoration: none;
     background-color: #EEE36E;
+}
+
+/* fotter */
+
+.footer {
+    position: relative;
+    max-width: 1536px;
+    background-color: #EEE36E;
+    height: 370px;
+}
+
+.footer_page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_name {
+    position: absolute;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    left: 217px;
+}
+
+.page_top {
+    position: absolute;
+    width: 106px;
+}
+
+.footer_top {
+    position: absolute;
+    width: 34px;
 }
