@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ポートフォリオ">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>about</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="box">
+            <div class="header_top">
+                <div class="section">
+                    <section class="name">
+                        <a href="#main">
+                            <h1>RIHO<br>
+                                FUJINO</h1>
+                            <p>web design<br>
+                                coding</p>
+                        </a>
+                    </section>
+                </div>
+                <div class="header_menu">
+                    <nav class="section">
+                        <div><a href="#about">about</a></div>
+                        <div><a href="#works">works</a></div>
+                        <div><a href="#contact">contact</a></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="about_point"><img src="images/flower_06.svg" alt="flower_06"></div>
+            <div class="title">
+                <h2>about</h2>
+            </div>
+            <p>藤野 里保<br>
+                大阪府出身 1992年<br>
+                海と山とお花がだいすきです</p>
+        </section>
+
+        <section id="about_wrap" class="about_wrap">
+            <div class="about_me"><img src="images/about_01-80.jpg" alt="aboutme"></div>
+            <div class="about_text">
+                <h3>デザイナーを目指すきっかけ</h3>
+                <p>
+                    元々、お花屋さんでフローリストとして働いていました。<br>
+                    そこでは色の組み合わせを考えたり、贈る相手のことを考えながら花束を作っていました。<br>
+                    自分が作ったものでお客様に喜んでいただけることが嬉しく、ワクワクしていました。<br>
+                    その頃からWEBデザインや配色などに興味を持ち始めました。ウェブ上には様々なデザインがあり、とても関心したのと同時に自分でもデザインができるようになりたいと思い、スクールを受講しました。<br>
+                    デザインも花束と同じで、色のトーンや素材の組み合わせで全く異なるものになるのでお客様がどういったものを求めているのか、フローリストを通して学んだことをデザインにも生かしていければいいなと思ってます。
+                </p>
+            </div>
+        </section>
+        <div class="about_under"><img src="images/about_02-80.jpg" alt="aboutme"></div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_page">
+                <div class="footer_name">
+                    RIHO<br>
+                    FUJINO
+                </div>
+                <p>web design<br>
+                    coding</p>
+            </div>
+            <div class="footer_insta">
+                <a class="footer_instalogo" href="#https://"><img src="images/insta_logo.svg" alt="instagram">
+                    <p>instagram</p>
+                </a>
+            </div>
+            <a class="page_top" href="#header"><img src="images/pagetop.svg" alt="pagetop"></a>
+            <p class="copy">© RIHO FUJINO ALL Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'nuy0gdd',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+
+/* ここから */
+
+.header_top {
+    padding: 5%;
+}
+
+.name {
+    top: 50px;
+}
+
+.about {
+    position: relative;
+}
+
+.about_point {
+    width: 126px;
+    position: absolute;
+    right: 18%;
+}
+
+.about p {
+    margin-top: 113px;
+    margin-left: 22%;
+    font-size: 24px;
+    line-height: 1.16;
+    font-weight: bold;
+}
+
+.about_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 176px;
+    box-sizing: border-box;
+}
+
+.about_me {
+    width: 55%;
+    padding-top: 12%;
+    padding-left: 17%;
+}
+
+.about_text h3 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #068B72;
+    padding-top: 103px;
+    padding-bottom: 44px;
+    padding-left: 20%;
+}
+
+.about_text p {
+    font-size: 20px;
+    line-height: 1.8;
+    width: 50%;
+    margin: 0 20%;
+}
+
+.about_under {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 216px;
+}

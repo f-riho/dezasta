@@ -19,7 +19,7 @@ li {
     padding: 0;
     line-height: 1;
     /*デフォルトの文字色、font-familyを予め当てておく*/
-    color: #000;
+    color: #1A1A1A;
     font-family: "fot-tsukuardgothic-std", sans-serif;
     font-weight: 400;
     /* メトリクス */
@@ -57,18 +57,62 @@ a:hover {
 
 /* 共通 */
 
-.header_top {
-    max-width: 1536px;
-    position: relative;
+.header {
     background-color: #EEE36E;
-    height: 24%;
+}
+
+.header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 .header_menu {
-    position: absolute;
-    right: 217px;
+    right: 22%;
     top: 48px;
     bottom: 48px;
+}
+
+.section {
+    font-family: "Outfit", sans-serif;
+    font-weight: 200;
+    font-size: 42px;
+    color: #068B72;
+}
+
+.title {
+    display: flex;
+    margin-right: 50%;
+    margin-top: 85px;
+}
+
+.box img {
+    position: relative;
+    width: 100%;
+}
+
+.name {
+    flex-direction: column;
+    max-width: 1200px;
+    font-weight: 400;
+    top: 325px;
+    left: 14%;
+}
+
+.section h1 {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    color: #068B72;
+}
+
+.name p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
 }
 
 h2 {
@@ -129,34 +173,57 @@ h2 {
     background-color: #EEE36E;
 }
 
-/* fotter */
+/* footer */
 
 .footer {
-    position: relative;
-    max-width: 1536px;
+    max-width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
     background-color: #EEE36E;
-    height: 370px;
+    padding: 40px;
 }
 
 .footer_page {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin-left: 17%;
 }
 
 .footer_name {
-    position: absolute;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
-    left: 217px;
+    font-size: 38px;
+    line-height: 1.10;
+    color: #068B72;
+}
+
+.footer_page p {
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .page_top {
-    position: absolute;
-    width: 106px;
+    position: fixed;
+    right: 156px;
+    bottom: 30px;
+    width: 80px;
 }
 
-.footer_top {
-    position: absolute;
+.footer_insta {
+    width: 100%;
+    text-align: center;
+}
+
+.footer_instalogo img {
     width: 34px;
+    margin: 0 auto 20px;
+}
+
+.copy {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 138px;
 }
