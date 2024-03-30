@@ -8,12 +8,10 @@
 
 /* ここから */
 
-.header_top {
-    padding: 5%;
-}
-
 .name {
-    top: 50px;
+    margin-top: 56px;
+    margin-bottom: 50px;
+    font-weight: 400;
 }
 
 .about {
@@ -23,14 +21,13 @@
 .about_point {
     width: 126px;
     position: absolute;
-    right: 18%;
+    right: 5%;
 }
 
 .about p {
     margin-top: 113px;
-    margin-left: 22%;
     font-size: 24px;
-    line-height: 1.16;
+    line-height: 2.00;
     font-weight: bold;
 }
 
@@ -38,14 +35,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     margin-bottom: 176px;
     box-sizing: border-box;
 }
 
 .about_me {
-    width: 55%;
+    width: 50%;
     padding-top: 12%;
-    padding-left: 17%;
+}
+
+.about_text {
+    width: 45%;
 }
 
 .about_text h3 {
@@ -54,21 +55,61 @@
     color: #068B72;
     padding-top: 103px;
     padding-bottom: 44px;
-    padding-left: 20%;
 }
 
 .about_text p {
     font-size: 20px;
     line-height: 1.8;
-    width: 50%;
-    margin: 0 20%;
 }
 
 .about_under {
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 216px;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.title {
+    display: block;
+    margin-top: 85px;
+}
+
+@media screen and (max-width:767px) {
+    .about_wrap {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .about_point {
+        width: 100px;
+    }
+
+    .inner {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .about_text h3 {
+        text-align: center;
+    }
+
+    .about_text {
+        display: block;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 80px;
+    }
 }

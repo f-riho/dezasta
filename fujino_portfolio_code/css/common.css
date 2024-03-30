@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 /* cssリセット */
 
@@ -70,13 +71,14 @@ a:hover {
     padding: 0 40px;
 }
 
-.header_menu {
-    right: 22%;
+.header_menu ul {
+    position: fixed;
+    right: 5%;
     top: 48px;
-    bottom: 48px;
+    z-index: 99;
 }
 
-.section {
+.nav li {
     font-family: "Outfit", sans-serif;
     font-weight: 200;
     font-size: 42px;
@@ -89,20 +91,12 @@ a:hover {
     margin-top: 85px;
 }
 
-.box img {
+.header_box img {
     position: relative;
     width: 100%;
 }
 
-.name {
-    flex-direction: column;
-    max-width: 1200px;
-    font-weight: 400;
-    top: 325px;
-    left: 14%;
-}
-
-.section h1 {
+.nav h1 {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 44px;
@@ -139,6 +133,8 @@ h2 {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 24px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
 }
 
 .more a::before {
@@ -160,8 +156,8 @@ h2 {
     border-right: 2px solid #068B72;
     transform: rotate(45deg);
     margin-left: 30px;
+    margin-bottom: -3px;
 }
-
 
 .more a:hover::before {
     top: 0;
@@ -176,7 +172,6 @@ h2 {
 /* footer */
 
 .footer {
-    max-width: 1200px;
     margin: 0 auto;
     max-width: 100%;
     background-color: #EEE36E;
@@ -186,8 +181,6 @@ h2 {
 .footer_page {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
-    margin-left: 17%;
 }
 
 .footer_name {

@@ -12,9 +12,9 @@
 
 <body>
     <header id="header" class="header">
-        <div class="box">
+        <div class="header_box">
             <div class="header_top">
-                <div class="section">
+                <div class="nav">
                     <section class="name">
                         <a href="#main">
                             <h1>RIHO<br>
@@ -25,17 +25,19 @@
                     </section>
                 </div>
                 <div class="header_menu">
-                    <nav class="section">
-                        <div><a href="#about">about</a></div>
-                        <div><a href="#works">works</a></div>
-                        <div><a href="#contact">contact</a></div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#works">works</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
 
-    <main>
+    <main class="inner">
         <section id="about" class="about">
             <div class="about_point"><img src="images/flower_06.svg" alt="flower_06"></div>
             <div class="title">
@@ -81,16 +83,7 @@
             <p class="copy">© RIHO FUJINO ALL Rights Reserved.</p>
         </div>
     </footer>
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'nuy0gdd',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
