@@ -4,33 +4,27 @@
 
 /* ポートフォリオ */
 
-/*========= LoadingのためのCSS ===============*/
-
-/* Loading背景画面設定　*/
-
-.splash {
+/* Loading*/
+#splash {
     /*fixedで全面に固定*/
     position: fixed;
-    z-index: 999;
     width: 100%;
     height: 100%;
     text-align: center;
 }
 
 /* Loadingバー中央配置　*/
-.splash_text {
+#splash_text {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 1;
+    z-index: 99;
     width: 100%;
     transform: translate(-50%, -50%);
 }
 
-/*========= レイアウトのためのCSS ===============*/
 
-
-.container {
+#container {
     width: 100%;
     height: 100vh;
     background: #ccc;
@@ -38,8 +32,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 99;
 }
-
 
 a {
     color: #333;
@@ -260,6 +254,7 @@ h2 {
     margin: 7%;
 }
 
+/* 問い合わせフォーム */
 .label,
 .input {
     display: block;
@@ -307,6 +302,7 @@ placeholder {
     color: darkgrey;
 }
 
+/* ボタン */
 .button {
     background: #EEE36E;
     position: relative;
@@ -360,7 +356,6 @@ placeholder {
     margin-top: 110px;
     margin-bottom: 216px;
 }
-
 
 @media screen and (max-width: 767px) {
     .nav h1 {

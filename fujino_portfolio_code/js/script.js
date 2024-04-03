@@ -1,4 +1,4 @@
-$(function (d) {
+(function (d) {
     var config = {
         kitId: 'nuy0gdd',
         scriptTimeout: 3000,
@@ -7,6 +7,7 @@ $(function (d) {
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
 })(document);
 
+// fadein
 $(function ($) {
     var fadeIn = $('.fade-in');
     $(window).on('scroll', function () {
@@ -21,6 +22,7 @@ $(function ($) {
     });
 });
 
+// loding 
 $(window).scroll(function () {
     $(".marker-animation").each(function () {
         var position = $(this).offset().top; //ページの一番上から要素までの距離を取得
@@ -61,5 +63,3 @@ var bar = new ProgressBar.Line(splash_text, {//id名を指定
 bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
     $("#splash").delay(500).fadeOut(800);//アニメーションが終わったら#splashエリアをフェードアウト
 });
-
-

@@ -89,7 +89,7 @@ a:hover {
     margin-top: 200px;
 }
 
-/* marker */
+/* コンセプトmarker */
 .marker-animation.active {
     background-position: -100% .9em;
 }
@@ -121,6 +121,7 @@ a:hover {
     padding: 0 40px;
 }
 
+/*  メニュー*/
 .header_menu ul {
     position: fixed;
     right: 5%;
@@ -147,6 +148,7 @@ a:hover {
     width: 100%;
 }
 
+/* ヘッダーロゴ */
 .nav h1 {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
@@ -251,7 +253,7 @@ h2 {
 
 .page_top {
     position: fixed;
-    right: 156px;
+    right: 100px;
     bottom: 210px;
     width: 80px;
 }
@@ -276,7 +278,6 @@ h2 {
 
 @media screen and (max-width: 767px) {
     .page_top {
-        bottom: 250px;
         width: 50px;
     }
 
