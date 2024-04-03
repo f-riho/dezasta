@@ -4,6 +4,51 @@
 
 /* ポートフォリオ */
 
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+
+.splash {
+    /*fixedで全面に固定*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* Loadingバー中央配置　*/
+.splash_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+a {
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 .header_logo {
     width: 16%;
     padding-top: 63px;
@@ -25,27 +70,6 @@
     width: 223px;
     top: 118px;
     right: 298px;
-}
-
-.Text-Span {
-    position: relative;
-    z-index: 3;
-}
-
-.Text-Span:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -14px;
-    width: 0%;
-    height: 4px;
-    background: #5bc8ac;
-    z-index: -1;
-    transition: all 0.8s;
-}
-
-.Text-Span.isActive:after {
-    width: 100%;
 }
 
 .lead {
@@ -255,6 +279,24 @@ h2 {
     margin: 0 auto;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
+    color: #068B72;
+}
+
+/* thankspage */
+.thanks_page p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    line-height: 3.00;
+    margin: 200px;
+}
+
+.footer_tx {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #EEE36E;
+    padding-bottom: 30px;
 }
 
 #content {
@@ -279,6 +321,7 @@ placeholder {
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     font-size: 24px;
+    border: none;
 }
 
 .button::before {
@@ -317,6 +360,7 @@ placeholder {
     margin-top: 110px;
     margin-bottom: 216px;
 }
+
 
 @media screen and (max-width: 767px) {
     .nav h1 {
@@ -404,5 +448,9 @@ placeholder {
 
     .form {
         width: 100%;
+    }
+
+    .thanks_page p {
+        font-size: 18px;
     }
 }

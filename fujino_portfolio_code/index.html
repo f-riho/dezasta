@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUJINO RIHO portfolio</title>
     <meta name="description" content="ポートフォリオ">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>FUJINO RIHO portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <section class="header_box">
             <div class="nav">
@@ -43,9 +44,9 @@
         </section>
 
         <div id="concept" class="concept">
-            <div class="concept_logo"><img src="images/logo.svg" alt="logo"></div>
+            <div class="concept_logo fade-in fade-in-right"><img src="images/logo.svg" alt="logo"></div>
             <p class="lead">
-                <span class="Text-Span JS_ScrollAnimationItem">お客様に伝わりやすく誰が見てもわかりやすい<br>
+                <span class="marker-animation">お客様に伝わりやすく誰が見てもわかりやすい<br>
                     こだわりとテーマが<br>
                     しっかり感じられるデザインをつくりたい<br>
                     と思ってます。</span>
@@ -55,25 +56,32 @@
         </div>
 
         <section id="works" class="works">
-            <h2 class="works_logo">works</h2>
+            <h2 class="works_logo fade-in fade-in-up">works</h2>
             <ul class="works">
-                <li class="works_all"><a href="#worsk01"><img src="images/topPC_01-80.jpg" alt="works01"></a></li>
-                <li class="works_all"><a href="#works02"><img src="images/topPC_02-80.jpg" alt="works02"></a></li>
-                <li class="works_all"><a href="#works03"><img src="images/topPC_03-80.jpg" alt="works03"></a></li>
-                <li class="works_all wksp"><a href="#works04"><img src="images/topPC_04-80.jpg" alt="works04"></a></li>
-                <li class="works_all wksp"><a href="#works05"><img src="images/topPC_05-80.jpg" alt="works05"></a></li>
-                <li class="works_all wksp"><a href="#works06"><img src="images/topPC_06-80.jpg" alt="works06"></a></li>
+                <li class="works_all"><a href="./works/index.html#flex_order4"><img src="images/topPC_01-80.jpg"
+                            alt="works01"></a></li>
+                <li class="works_all"><a href="./works/index.html#flex_order5"><img src="images/topPC_02-80.jpg"
+                            alt="works02"></a></li>
+                <li class="works_all"><a href="./works/index.html#flex_order1"><img src="images/topPC_03-80.jpg"
+                            alt="works03"></a>
+                </li>
+                <li class="works_all wksp"><a href="./works/index.html#flex_order3"><img src="images/topPC_04-80.jpg"
+                            alt="works04"></a></li>
+                <li class="works_all wksp"><a href="./works/index.html#flex_order6"><img src="images/topPC_05-80.jpg"
+                            alt="works05"></a></li>
+                <li class="works_all wksp"><a href="./works/index.html#flex_order2"><img src="images/topPC_06-80.jpg"
+                            alt="works06"></a></li>
             </ul>
             <div class="more">
-                <a href="#works">more</a>
+                <a href="works/index.html">more</a>
             </div>
         </section>
 
         <section id="about" class="about">
             <div class="about_wrap">
                 <div class="about_flower01"><img src="images/flower_01.svg" alt="flower_01"></div>
-                <div class="about_flower02"><img src="images/flower_02.svg" alt="flower_02"></div>
-                <div class="about_flower03"><img src="images/flower_03.svg" alt="flower_03"></div>
+                <div class="about_flower02 fade-in fade-in-up"><img src="images/flower_02.svg" alt="flower_02"></div>
+                <div class="about_flower03 fade-in fade-in-up"><img src="images/flower_03.svg" alt="flower_03"></div>
                 <div class="about_bird"><img src="images/bird.svg" alt="bird"></div>
                 <div class="about_me"><img src="images/main_about15-80.jpg" alt="about_me"></div>
                 <h2>about</h2>
@@ -89,12 +97,13 @@
         </section>
 
         <div class="more">
-            <a href="#about">more</a>
+            <a href="about/index.html">more</a>
         </div>
 
         <section id="contact" class="contact">
-            <h2 class="contact_logo">contact</h2>
-            <p>お仕事のご依頼はこちらまで。<br>
+            <h2 class="contact_logo fade-in fade-in-up">contact</h2>
+            <p>
+                お仕事のご依頼はこちらまで。<br>
                 その他、こんなことできるの？などのお問い合わせも<br>
                 お待ちしております。<br>
                 私にできることはしていきたいですし、<br>
@@ -104,17 +113,17 @@
 
             <form
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdVBJmQaszv_CnBbSq-xjNf07SH_qBaoo_74OZ1OS4GI3X3hw/formResponse"
-                method="form" class="form">
+                method="form" class="form" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="name_form">
                     <label for="name" class="label">Name</label>
-                    <input type="text" class="input" value="" placeholder="お名前" name="entry.1910450680" />
+                    <input type="text" class="input" value="" placeholder="お名前" name="entry.1910450680" required>
                 </div>
                 <div class="email">
                     <label for="email" class="label">Email</label>
-                    <input type="text" class="input" value="" placeholder="アドレス" name="entry.1383117577" />
+                    <input type="text" class="input" value="" placeholder="アドレス" name="entry.1383117577" required>
                 </div>
                 <label for="category" class="label">Category</label>
-                <select name="entry.496471533" class="input">
+                <select name="entry.496471533" class="input" required>
                     <option value="">選択してください</option>
                     <option value="design">デザインについて</option>
                     <option value="code">html / css / JavaScript / jQuery</option>
@@ -124,15 +133,21 @@
                     <div class="contet_label">
                         <label for="content" class="label">Message</label>
                     </div>
-                    <textarea id="content" name="entry.1529817583" class="input" placeholder="問い合わせ内容"></textarea>
+                    <textarea id="content" name="entry.1529817583" class="input" placeholder="問い合わせ内容"
+                        required></textarea>
                 </div>
-                <div class="button" type="submit">
+                <button class="button" type="submit">
                     <div class="submit">submit</div>
-                </div>
+                </button>
             </form>
+            <script type="text/javascript">
+                var submitted = false;
+            </script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+                onload="if(submitted)  {window.location='thanks.html';}"></iframe>
         </section>
 
-        <footer>
+        <footer style="background-color: #EEE36E;">
             <div class="footer">
                 <a class="page_top" href="#header"><img src="images/pagetop.svg" alt="pagetop"></a>
                 <div class="footer_page">
@@ -141,12 +156,14 @@
                             <p>instagram</p>
                         </a>
                     </div>
-                    <div class="footer_name">
-                        RIHO<br>
-                        FUJINO
-                    </div>
-                    <p>web design<br>
-                        coding</p>
+                    <a href="./index.html">
+                        <div class="footer_name">
+                            RIHO<br>
+                            FUJINO
+                        </div>
+                        <p>web design<br>
+                            coding</p>
+                    </a>
                 </div>
                 <p class="copy">© RIHO FUJINO ALL Rights Reserved.</p>
             </div>

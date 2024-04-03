@@ -56,6 +56,56 @@ a:hover {
     /* 透過させる */
 }
 
+/* jQ */
+
+.fade-in {
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+}
+
+.fade-in-up {
+    transform: translate(0, 50px);
+}
+
+.fade-in-down {
+    transform: translate(0, -50px);
+}
+
+.fade-in-left {
+    transform: translate(-50px, 0);
+}
+
+.fade-in-right {
+    transform: translate(50px, 0);
+}
+
+.scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.col:nth-child(2) {
+    margin-top: 200px;
+}
+
+/* marker */
+.marker-animation.active {
+    background-position: -100% .9em;
+}
+
+.marker-animation {
+    background-image: -webkit-linear-gradient(left, transparent 50%, rgb(255, 250, 153) 50%);
+    background-image: -moz-linear-gradient(left, transparent 50%, rgb(255, 250, 153) 50%);
+    background-image: -ms-linear-gradient(left, transparent 50%, rgb(255, 250, 153) 50%);
+    background-image: -o-linear-gradient(left, transparent 50%, rgb(255, 250, 153) 50%);
+    background-image: -linear-gradient(left, transparent 50%, rgb(255, 250, 153) 50%);
+    background-repeat: repeat-x;
+    background-size: 200% .5em;
+    background-position: 0 .5em;
+    transition: all 2s ease;
+}
+
 /* 共通 */
 
 .header {
@@ -86,9 +136,10 @@ a:hover {
 }
 
 .title {
-    display: flex;
+    display: block;
     margin-right: 50%;
     margin-top: 85px;
+    padding-left: 40px;
 }
 
 .header_box img {
@@ -173,7 +224,7 @@ h2 {
 
 .footer {
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 1200px;
     background-color: #EEE36E;
     padding: 40px;
 }
@@ -181,6 +232,7 @@ h2 {
 .footer_page {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .footer_name {
@@ -200,11 +252,12 @@ h2 {
 .page_top {
     position: fixed;
     right: 156px;
-    bottom: 30px;
+    bottom: 210px;
     width: 80px;
 }
 
 .footer_insta {
+    position: absolute;
     width: 100%;
     text-align: center;
 }
@@ -219,4 +272,23 @@ h2 {
     font-size: 16px;
     text-align: center;
     padding-top: 138px;
+}
+
+@media screen and (max-width: 767px) {
+    .page_top {
+        bottom: 250px;
+        width: 50px;
+    }
+
+    .footer_name {
+        font-size: 20px;
+    }
+
+    .footer_name p {
+        font-size: 10px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
 }
