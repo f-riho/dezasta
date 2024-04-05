@@ -5,6 +5,18 @@
 /* ポートフォリオ */
 
 /* Loading*/
+#container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+}
+
 #splash {
     /*fixedで全面に固定*/
     position: fixed;
@@ -21,22 +33,6 @@
     z-index: 99;
     width: 100%;
     transform: translate(-50%, -50%);
-}
-
-
-#container {
-    width: 100%;
-    height: 100vh;
-    background: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 99;
-}
-
-a {
-    color: #333;
 }
 
 a:hover {
@@ -61,7 +57,7 @@ a:hover {
 
 .concept_logo {
     position: absolute;
-    width: 223px;
+    width: 15%;
     top: 118px;
     right: 298px;
 }
@@ -149,6 +145,7 @@ a:hover {
 .about_me {
     width: 38%;
     margin: auto;
+    margin-top: 180px;
 }
 
 .about_wrap {
@@ -178,7 +175,9 @@ a:hover {
 }
 
 .about_bird {
-    width: 110px;
+    position: absolute;
+    width: 10%;
+    margin-left: 80%;
 }
 
 .about {
@@ -255,8 +254,8 @@ h2 {
 }
 
 /* 問い合わせフォーム */
-.label,
-.input {
+#label,
+#input {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -264,7 +263,13 @@ h2 {
     font-size: 16px;
 }
 
+.input,
 .label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 16px;
     padding-left: 0px;
 }
 
@@ -372,14 +377,6 @@ placeholder {
 
     .lead {
         font-size: 18px;
-    }
-
-    .concept_logo {
-        width: 120px;
-    }
-
-    .lead_logo {
-        width: 137px;
     }
 
     .lead_logo2 {
