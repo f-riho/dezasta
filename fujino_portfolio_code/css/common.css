@@ -31,6 +31,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    display: none;
+}
+
 a {
     /*下線を消す*/
     text-decoration: none;
@@ -98,15 +102,15 @@ a:hover {
     /* 単色の場合は同じ色、グラデーションさせる場合は別々の色 */
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-size: 0 20%;
+    background-size: 0 30%;
     /* '30%'の部分にマーカーの太さを記入 */
-    transition: all 2s ease-in-out;
+    transition: all 3s ease-in-out;
     /* マーカーを引く速度を調整 */
 }
 
 /* アニメーション発火時 */
 .js-marker.inview {
-    background-size: 100% 20%;
+    background-size: 100% 30%;
     /* '30%'の部分は上で設定した太さに合わせる */
 }
 

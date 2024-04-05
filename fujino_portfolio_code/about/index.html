@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
     <meta name="description" content="ポートフォリオ">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>about</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+    <script src="path/intersection-observer.js"></script><!-- polyfillを最初に読み込む -->
 </head>
 
 <body>
@@ -43,9 +46,11 @@
             <div class="title">
                 <h2>about</h2>
             </div>
-            <p>藤野 里保<br>
+            <span class="js-marker">
+                藤野 里保<br>
                 大阪府出身 1992年<br>
-                海と山とお花がだいすきです</p>
+                海と山とお花がだいすきです
+            </span>
         </section>
 
         <section id="about_wrap" class="about_wrap">
